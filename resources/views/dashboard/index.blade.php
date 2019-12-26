@@ -6,7 +6,7 @@
         <div class="col-md-12 grid-margin">
             <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    <h4 class="font-weight-bold mb-0">PBL Career Dashboard</h4>
+                    <h4 class="font-weight-bold mb-0">Book Store Dashboard</h4>
                 </div>
                 <div>
                     <!-- <button type="button" class="btn btn-primary btn-icon-text btn-rounded">
@@ -20,7 +20,7 @@
         <div class="col-md-3 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <p class="card-title text-md-center text-xl-left">Posts</p>
+                    <p class="card-title text-md-center text-xl-left">Book</p>
                     <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
                         <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">34040</h3>
                         <i class="ti-files icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
@@ -32,7 +32,7 @@
         <div class="col-md-3 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <p class="card-title text-md-center text-xl-left">Views</p>
+                    <p class="card-title text-md-center text-xl-left">Selled</p>
                     <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
                         <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">47033</h3>
                         <i class="ti-eye icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>

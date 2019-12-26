@@ -6,7 +6,7 @@
         <div class="col-md-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">POST</h4>
+                    <h4 class="card-title">BOOK</h4>
                     <form method="POST" action="{{ route('post.update', $post->id) }}" enctype="multipart/form-data" class="forms-sample">
                         @csrf
                         @method ('PUT')
@@ -48,6 +48,15 @@
                             <img src="{{ $post->image }}" class="img-fluid mb-1" alt="">
                             <input type="file" name="image" class="form-control @error('image') is-invalid @enderror">
                             @error('image')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <label>Price</label>
+                            <input type="number" name="price" class="form-control @error('price') is-invalid @enderror" placeholder="Price" value="{{ $post->price }}" required>
+                            @error('price')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>

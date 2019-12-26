@@ -6,7 +6,7 @@
         <div class="col-lg-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">POST</h4>
+                    <h4 class="card-title">BOOK</h4>
                     <div class="template-demo">
                         <button class="btn btn-primary btn-rounded btn-icon-text" onclick="location.href='{{ route('post.create') }}'" title="CREATE">
                             <i class="ti-plus btn-icon-prepend"></i>
@@ -20,6 +20,7 @@
                                     <th>ID</th>
                                     <th>Title</th>
                                     <th>Category</th>
+                                    <th>Price</th>
                                     <th>Created At</th>
                                     <th></th>
                                 </tr>
@@ -30,6 +31,7 @@
                                     <td>{{ $post->id }}</td>
                                     <td>{{ $post->title }}</td>
                                     <td>{{ $post->category->title }}</td>
+                                    <td>IDR {{ number_format($post->price, 2, ',', '.') }}</td>
                                     <td>{{ $post->created_at }}</td>
                                     <td>
                                         <div class="grid-button">

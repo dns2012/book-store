@@ -15,8 +15,8 @@
         </li>
         <li class="nav-item {{ strpos(Route::currentRouteName(), 'post') === false ? '' : 'active' }}">
             <a class="nav-link" href="{{ route('post.index') }}">
-                <i class="ti-file menu-icon"></i>
-                <span class="menu-title">Post</span>
+                <i class="ti-book menu-icon"></i>
+                <span class="menu-title">Book</span>
             </a>
         </li>
         <li class="nav-item {{ strpos(Route::currentRouteName(), 'category') === false ? '' : 'active' }}">

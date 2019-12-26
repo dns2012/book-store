@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return redirect()->route('login');
+    return redirect()->route('home');
 });
 
 Auth::routes();
@@ -26,3 +26,7 @@ Route::resource('post', 'PostController')->middleware('auth');
 Route::resource('category', 'CategoryController')->middleware('auth');
 
 Route::resource('gallery', 'GalleryController')->middleware('auth');
+
+Route::prefix('home')->name('home')->group(function() {
+    Route::get('', 'Frontend\HomeController@index');
+});

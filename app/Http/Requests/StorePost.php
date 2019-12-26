@@ -30,7 +30,8 @@ class StorePost extends FormRequest
             'category' => ['required', 'numeric'],
             'title' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
-            'image' => ['required', 'image', 'mimes:jpeg,jpg,png']
+            'image' => ['required', 'image', 'mimes:jpeg,jpg,png'],
+            'price' => ['required', 'numeric']
         ];
     }
 }

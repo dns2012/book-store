@@ -50,6 +50,7 @@ class PostController extends Controller
         $post->category_id = $request->input('category');
         $post->title = $request->input('title');
         $post->description = $request->input('description');
+        $post->price = $request->input('price');
         $post->image = ImgurService::upload($request->file('image')->path());
         $post->slug = Str::slug($post->title);
 
@@ -98,6 +99,7 @@ class PostController extends Controller
         $post->category_id = $request->input('category');
         $post->title = $request->input('title');
         $post->description = $request->input('description');
+        $post->price = $request->input('price');
         $post->slug = Str::slug($post->title);
 
         if ($request->file('image')) {

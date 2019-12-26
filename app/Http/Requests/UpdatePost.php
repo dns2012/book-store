@@ -30,7 +30,8 @@ class UpdatePost extends FormRequest
             'category' => ['required', 'numeric'],
             'title' => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
-            'image' => ['image', 'mimes:jpeg,jpg,png']
+            'image' => ['image', 'mimes:jpeg,jpg,png'],
+            'price' => ['required', 'numeric']
         ];
     }
 }

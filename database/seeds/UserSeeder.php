@@ -15,8 +15,8 @@ class UserSeeder extends Seeder
     {
         DB::table('users')->insert([
             'name' => 'admin',
-            'email' => 'admin@pblcareer.com',
-            'password' => Hash::make('pblcareer'),
+            'email' => 'admin@bookstore.com',
+            'password' => Hash::make('bookstore'),
             'role' => 1,
             'avatar' => 'https://pngimage.net/wp-content/uploads/2018/05/default-user-profile-image-png-7.png'
         ]);

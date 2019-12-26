@@ -14,10 +14,11 @@ class PostSeeder extends Seeder
     {
         DB::table('posts')->insert([
             'category_id' => 1,
-            'title' => 'Example Job Vacancy',
-            'description' => 'Description Job Vacancy',
-            'image' => 'https://blog.prosa.ai/media/images/Web_1280__3.original.png',
-            'slug' => 'example-job-vacancy'
+            'title' => 'Example Book',
+            'description' => 'Description Book',
+            'price' => 65450,
+            'image' => 'https://cdn.gramedia.com/uploads/items/img20190913_14323955_qUA9DUp__w414_hauto.jpg',
+            'slug' => 'example-job-book'
         ]);
     }
 }
